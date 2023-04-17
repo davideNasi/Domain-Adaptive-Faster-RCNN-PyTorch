@@ -156,6 +156,18 @@ class DatasetCatalog(object):
                 "img_dir": 'watercolor/JPEGImages',
                 "ann_file": 'watercolor/instances_test.json',
         },
+        'source_train_cocostyle':{
+                "img_dir": 'wolves/images',
+                "ann_file": 'wolves/source_train.json'
+        },
+        'target_train_cocostyle': {
+            "img_dir": 'wolves/images',
+            "ann_file": 'wolves/target_test.json',
+        },
+        'target_test_cocostyle': {
+            "img_dir": 'wolves/images',
+            "ann_file": 'wolves/target_test.json',
+        },
     }
 
     @staticmethod
