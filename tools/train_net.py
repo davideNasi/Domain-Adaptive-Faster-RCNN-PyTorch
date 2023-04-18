@@ -29,6 +29,7 @@ from maskrcnn_benchmark.utils.miscellaneous import mkdir
 def train(cfg, local_rank, distributed):
     model = build_detection_model(cfg)
     device = torch.device(cfg.MODEL.DEVICE)
+    # device = torch.device("cpu")
     model.to(device)
 
     optimizer = make_optimizer(cfg, model)
